@@ -60,7 +60,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="underheader-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button primary index-page">Заказать услугу</button>
+          <button type="button" class="button primary index-page" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Studio section -->
@@ -122,9 +124,11 @@
           <ul class="list portfolio-list">
             <li class="items">
               <img src="./images/indeximages/box1.jpg" alt="Планшет и блоксхема" width="370" />
+              <p class="index-owerlay">Десктопные приложения</p>
             </li>
             <li class="items">
               <img src="./images/indeximages/box2.jpg" alt="Ноутбук и телефон" width="370" />
+              <p class="index-owerlay">Мобильные приложения</p>
             </li>
             <li class="items">
               <img
@@ -132,6 +136,7 @@
                 alt="Цветовая палитра на планшете"
                 width="370"
               />
+              <p class="index-owerlay">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -390,5 +395,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="18px" height="18px">
+            <use href="images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
